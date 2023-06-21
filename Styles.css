@@ -1,0 +1,408 @@
+﻿/* variables */
+
+:root {
+	--primary-color: #50330c;
+	--accent-color: #68ba84;
+	--oofwhite-color: #f8f8f8;
+	--white-color: #ffffff;
+	--text-color: #939393;
+	--font-main: 'Popins'
+}
+
+
+@keyframes slideInLeft {
+    100% {
+        transform: translateX(-100);
+    }
+    0% {
+        transform: translateX(0);
+    }
+}
+header, section, footer, li, aside, nav, article, figure{
+	display: block;
+}
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: #666666;
+	background: var(--accent-color);
+	text-align: center;
+	width: 1000px;
+	margin: 0px auto;
+	padding: 0px auto;
+	/* background: url(Web_animation_concept.gif) no-repeat; */
+	background-size: cover;
+	touch-action: manipulation;
+}
+header {
+	color: var(--primary-color);
+	position: fixed;
+	top: 0;
+	margin: 0px;
+	left: 0px;
+	padding: 5px;
+	width: 100%;
+	z-index: 100;
+	background: #3cbebe;
+	height: 50px;
+}
+a {
+	color: #134217;
+}
+header li {
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-right: 10px;
+}
+
+#query {
+	height: 30px;
+	margin-bottom: 2px;
+	background-color: #222222;
+	color: #155f23;
+	border: #134217 2px;
+	border-style: groove;
+}
+::placeholder {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-style: italic;
+	font-weight: lighter;
+	color: #155f23;
+}
+
+/* just to put everything aside vertically */
+
+#sider {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+	text-align: left;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    box-sizing: inherit;
+    padding: 0;
+    position: fixed;
+    top: 30.5%;
+    left: 0;
+    list-style: none;
+    padding-left: 0;
+    z-index: 10;
+    margin: 0 0 0 5px;
+    transition: left .25s ease-in-out;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+#sider2 {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+	text-align: right;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    box-sizing: inherit;
+    padding: 0;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    list-style: none;
+    padding-right: 0;
+    z-index: 10;
+    margin: 0 5px 0 0;
+    transition: right .25s ease-in-out;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+	text-align: justify;
+}
+
+.ad {
+	border: #000000 solid 1px;
+	border-radius: 3px;
+	color: #222222;
+	background-color: #155f23;
+	display: block;
+	margin: 2px;
+}
+.ad:hover {
+	color: #000000;
+}
+
+#container {
+	border: #106340 solid 2px;
+	color: #ffffff;
+	background: #423737;
+	border-radius: 1em 1em 2em 4em / 4em 2em 1em 1em;
+}
+/*i am*/
+
+
+header .LogIn {
+	color: #423737;
+}
+header .Map {
+	color: #155f23;
+}
+header .home-page {
+	color: #155f23;
+	font-size: 22px;
+}
+a {
+	text-decoration: none;
+}
+section {
+	display: block;
+	text-align: center;
+	border: 2px #666666 solid;
+	width: 90%;
+	margin: 50px auto;
+	border-radius: 5px; /* if no mathematics applies  */
+	background: url(yalantis-soft-body-dynamics-dribbble.gif)#3cbebe;
+	background-size: cover;
+	margin-bottom: 55px;
+	border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+	-moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+	-webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+}
+li#form-btn {
+	padding: 20px 20px 20px 20px;
+	margin: 20px 2px 20px 2px;
+}
+/* the button */
+.btn {
+	color: #000000;
+	background-color: #666666;
+	border: #000000 solid 2px;
+	border-radius: 35px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	letter-spacing: 0.1em;
+	word-spacing: 0.2em;
+	font-size: 15px;
+	cursor: pointer;
+	height: 35px;
+	width: auto;
+	padding: 5px 30px 5px 30px;
+	font-weight: bolder;
+	font-style: oblique;	
+}
+
+/*  only for the development page in index-jump.html  */
+
+.btn:disabled {
+	color: #ffffff;
+	background-color: #a9a9a9;
+	border: #ffffff solid 2px;
+	cursor: not-allowed;
+	width: auto;
+	margin: 0px 0px 0px 0px;
+}
+
+/* it all ends here */
+
+
+a .btn:hover {
+	color: #155f23;
+	background-color: #000000;
+	border: #155f23 solid 2px;
+}
+a .btn:active {
+	background-color: #fff;
+}
+a .btn:focus {
+	color: #155f23;
+}
+footer {
+	background: #134217;
+	border-top: #106340 solid 1px;
+	box-shadow: unset;
+	font: var(--font-main);
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	margin: 0;
+	right: 0;
+	left: 0;
+	padding: 10px;
+}
+footer#below li a {
+	color: #000000;
+	padding: 0px auto;
+	margin: 0px 0px 0px 0px;
+}
+
+/* log in form */
+
+#forms {
+	margin: 50px auto;
+	width: 90%;
+	background: #666666;
+	color: #000000;
+	padding: 2px;
+	background-size: inherit;
+	text-align: unset;
+	border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+	-moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+	-webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+}
+#inside-form {
+	height: 5px;
+}
+input {
+	width: auto;
+	margin: 0px;
+	margin-top: 25px;
+	border: #666666 solid 2px;
+	padding: 10px;
+	border-radius: 50px;
+}
+select[id="location"] {
+	border: 2px solid #155f23;
+	border-radius: 45px;
+	padding: 2px;
+	color: #134217;
+}
+select[id="location"]:hover {
+	border: 2px solid #155f23;
+	background-color: #666666;
+}
+input[type="date"] {
+	border: #134217 solid 2px;
+}
+#pay {
+	display: inline-block;
+}
+#ConfAcc {
+	padding: 0px 0px 0px 0px;
+}
+
+#about {
+	color: #000000;
+	background: url(thumb_04b.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: #423737 solid 2px;
+	border-radius: 2em 1em 2em 1em / 4em 2em 4em 2em;
+}
+
+p {
+	color: #155f23;
+	font: BlinkMacSystemFont,-apple-system,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-weight: bolder;
+}
+#rules {
+	text-align: left;
+	background: url(development_uiux-88ea117bee955fbad160594ef098ef4e.svg) no-repeat;
+	background-size: cover;
+}
+
+.flex-grid {
+	position: relative;
+	display: flex;
+	top: 60px;
+}
+.col {
+	margin: 2px;
+}
+.col1 {
+	flex: 5;
+	background: #3cbebe;
+}
+.col2 {
+	flex: 3;
+	background: #222222;
+}
+.col3 {
+	flex: 4;
+}
+.nag {
+	flex: 1;
+	display: inline-flex;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	padding-left: 5px;
+}
+.home {
+	float: left;
+}
+
+@media (max-width:1326px) {
+	.flex-grid {
+		display: block;
+	}
+}
+
+/* shrink rule */
+
+@media screen and (max-width: 1326px) {
+	body {
+		max-width: 100%;
+	}
+	
+	header {
+		width: 100%;
+	}
+}
+
+/* development Page on tripleactionx.42web.io */ /* serverside codes */
+
+#develop {
+	text-align: center;
+	background: #134217 /* for no image displays*/ url(back-roue.gif) no-repeat;
+	overflow: hidden;
+	background-size: cover;
+	background-position: unset;
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+#sectdev {
+	float: left;
+	margin: 300px 0px 200px 0px;
+	text-align: left;
+}
+#sectdev h3 {
+	color: #000000;
+}
+.dev {
+	color: #000000;
+}
+blockquote {
+	color: #222222;
+}
+
+
+
+/* media querries applie only to the index jump page while the website is under development */
+
+@media screen and (max-width: 1326px) {
+	#develop {
+		width: 100%;
+		overflow: auto;
+	}
+	#sectdev {
+		float: right;
+		width: 70%;
+		margin: 0% 0%;
+		overflow: hidden;
+		padding: 2%;
+	}
+	#sider .ct-socials {
+		width: 25%;
+		padding: 2%;
+		margin: 0% 0%;
+		position: inherit;
+	}
+	.btn:disabled{
+		width: auto;
+		padding: 1% 1% 1% 1%;
+	}
+}
